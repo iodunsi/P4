@@ -6,33 +6,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
       body {
-        background: linear-gradient(to right, #6dd5fa, #2980b9); /* Matches your prototype's gradient */
-        color: ##000000
-; /* Makes text readable against the gradient */
-      }
-      .get-involved-btn {
-        background-color: #00a651;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      .footer {
-        background-color: #fff;
+        background-color: #f9f9f9;
         color: #333;
-        padding: 10px 20px;
-        font-size: 0.9rem;
+      }
+      .hero-section {
+        background: linear-gradient(to right, #6dd5fa, #2980b9);
+        color: #fff;
+        padding: 50px 20px;
         text-align: center;
       }
+      .hero-section h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .section-title {
+        margin: 30px 0 10px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #00a651;
+      }
+      .tip-category {
+        margin-bottom: 20px;
+      }
+      .action-section {
+        background-color: #00a651;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .action-section a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: underline;
+      }
     </style>
-    <title>Verde Newark</title>
+    <title>Sustainability Tips</title>
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Verde Newark</a>
+      <a class="navbar-brand" href="index.html">Verde Newark</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,51 +70,53 @@
         </ul>
       </div>
     </nav>
-
     <!-- Hero Section -->
-    <div class="container text-center mt-5">
-      <img src="media/verdelogo.png" alt="Verde Newark Logo" class="mb-3">
-      <p>Join the Newark Verde Community</p>
-      <button class="get-involved-btn">Get Involved</button>
+    <div class="hero-section">
+      <h1>Sustainability Tips</h1>
+      <p>Practical ways to make a positive impact on the environment.</p>
     </div>
 
-    <!-- Cards Section -->
+    <!-- Tips Section -->
     <div class="container my-5">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Relevant Courses</h5>
-              <p class="card-text">For those within the NJIT community, learn of the courses that highlight sustainablity.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Eco-Friendly Businesses</h5>
-              <p class="card-text">Discover local businesses supporting green initiatives.</p>
-              <a href="efb.html" class="btn btn-primary">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Resource Library</h5>
-              <p class="card-text">Access our comprehensive library of sustainable resources.</p>
-              <a href="res.html" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
+      <h2 class="section-title">Categories</h2>
+
+      <!-- Home Tips -->
+      <div class="tip-category">
+        <h3>🏡 Home Sustainability</h3>
+        <ul>
+          <li>Switch to LED light bulbs—they use 75% less energy.</li>
+          <li>Turn off appliances when not in use to save energy.</li>
+          <li>Install low-flow showerheads to conserve water.</li>
+        </ul>
+      </div>
+
+      <!-- Travel Tips -->
+      <div class="tip-category">
+        <h3>🚗 Eco-Friendly Travel</h3>
+        <ul>
+          <li>Carpool, bike, or use public transportation whenever possible.</li>
+          <li>Choose direct flights to reduce your carbon footprint.</li>
+          <li>Bring reusable water bottles to avoid plastic waste.</li>
+        </ul>
+      </div>
+
+      <!-- Food Tips -->
+      <div class="tip-category">
+        <h3>🍎 Sustainable Eating</h3>
+        <ul>
+          <li>Buy local and seasonal produce to support farmers and reduce emissions.</li>
+          <li>Reduce meat consumption—try "Meatless Mondays."</li>
+          <li>Compost food scraps to reduce landfill waste.</li>
+        </ul>
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      Copyright © 2024 Isaiah Odunsi | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
-    </footer>
+    <!-- Call-to-Action Section -->
+    <div class="action-section">
+      <h3>Have a tip to share?</h3>
+      <p>Join our community and share your sustainability tips with us! <a href="#">Get Involved</a></p>
+      <a href="index.html">Back To Home</a></p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBhUnkF5RMbXT9E9IoIW5i8z1fTocmQSv9EK9MIzpeP7uwlT" crossorigin="anonymous"></script>
@@ -108,4 +124,3 @@
   </body>
 </html>
 <!-- DEVELOPER: Isaiah Odunsi, IS117-005, Spring 2024 ->
-

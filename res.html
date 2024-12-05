@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      .hero-section {
+        background: linear-gradient(to right, #43cea2, #185a9d);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .hero-section h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .resource-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+      }
+      .resource-card:hover {
+        transform: scale(1.02);
+      }
+      .resource-category {
+        color: #00a651;
+        font-weight: bold;
+      }
+      .filter-section {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      .featured-resources {
+        background-color: #e0f7fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+      .btn-view {
+        background-color: #185a9d;
+        color: white;
+      }
+      .btn-view:hover {
+        background-color: #43cea2;
+      }
+    </style>
+    <title>Resource Library</title>
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Verde Newark</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+           <li class="nav-item"><a class="nav-link" href="efb.html">Eco Friendly Businesses</a></li>
+          <li class="nav-item"><a class="nav-link" href="res.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="take-part.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="sus.html">Sustainability Initiatives</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Seasonal Dishes</a>
+              <a class="dropdown-item" href="#">Eco-Friendly Businesses</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Take Part</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1>Resource Library</h1>
+      <p>Explore resources to learn, grow, and take action toward a sustainable future.</p>
+    </div>
+
+    <!-- Container -->
+    <div class="container my-5">
+      <!-- Filter/Search Section -->
+      <div class="filter-section">
+        <input type="text" class="form-control" placeholder="Search resources...">
+        <select class="form-control mt-3">
+          <option value="all">All Categories</option>
+          <option value="articles">Articles</option>
+          <option value="guides">Guides</option>
+          <option value="tools">Tools</option>
+          <option value="videos">Videos</option>
+          <option value="websites">Websites</option>
+        </select>
+      </div>
+
+      <!-- Featured Resources -->
+      <div class="featured-resources">
+        <h4>Featured Resources</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="resource-card">
+              <h5>Guide to Zero-Waste Living</h5>
+              <p>Learn how to minimize waste in your daily life with this comprehensive guide.</p>
+              <span class="resource-category">Guide</span>
+              <a href="#" class="btn btn-view mt-2 d-block">View Resource</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="resource-card">
+              <h5>Top 10 Eco-Friendly Apps</h5>
+              <p>Discover apps to help you track and reduce your environmental impact.</p>
+              <span class="resource-category">Tools</span>
+              <a href="#" class="btn btn-view mt-2 d-block">View Resource</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Resources Section -->
+      <h4>All Resources</h4>
+      <div class="row">
+        <!-- Resource Card -->
+        <div class="col-md-4">
+          <div class="resource-card">
+            <h5>Sustainable Gardening Basics</h5>
+            <p>Tips and tricks for starting your sustainable garden.</p>
+            <span class="resource-category">Article</span>
+            <a href="#" class="btn btn-view mt-2 d-block">View Resource</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="resource-card">
+            <h5>Eco-Friendly Cleaning Hacks</h5>
+            <p>Make your cleaning routine eco-conscious with these simple hacks.</p>
+            <span class="resource-category">Guide</span>
+            <a href="#" class="btn btn-view mt-2 d-block">View Resource</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="resource-card">
+            <h5>DIY Composting 101</h5>
+            <p>A step-by-step video guide to creating your compost bin at home.</p>
+            <span class="resource-category">Video</span>
+            <a href="#" class="btn btn-view mt-2 d-block">View Resource</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+<!-- DEVELOPER: Isaiah Odunsi, IS117-005, Spring 2024 ->
