@@ -30,8 +30,8 @@ def submit_contact():
     conn.commit()
     conn.close()
 
-    flash("Thank you! Your message has been received.", "success")
-    return redirect("/take-part")
+    success_message = f"Thank you for contacting us! We'll get back to you soon, {name}!"
+    return render_template("take-part.html", success_message=success_message)
 
 if __name__ == "__main__":
     app.run(debug=True)

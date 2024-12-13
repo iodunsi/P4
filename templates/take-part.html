@@ -90,6 +90,12 @@
         <p>By joining our efforts, you contribute to spreading awareness, creating impactful projects, and inspiring others to take action.</p>
       </div>
 
+      {% if success_message %}
+  <div class="alert alert-success text-center">
+    {{ success_message }}
+  </div>
+  {% endif %}
+
       <!-- Contact Form Section -->
       <div class="form-section mx-auto" style="max-width: 600px;">
         <h4 class="text-center">Contact Us</h4>
