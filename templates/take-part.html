@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .hero-section {
+        background: linear-gradient(to right, #43cea2, #185a9d);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .hero-section h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .form-section {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .form-control, .btn-submit {
+        border-radius: 20px;
+      }
+      .btn-submit {
+        background-color: #185a9d;
+        color: white;
+      }
+      .btn-submit:hover {
+        background-color: #43cea2;
+      }
+      .social-links a {
+        margin: 0 10px;
+        color: #185a9d;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+      .social-links a:hover {
+        color: #43cea2;
+      }
+      /*DEVELOPER: Isaiah Odunsi, IS117-005, Fall, 2024 */
+    </style>
+    <title>Take Part</title>
+  </head>
+  <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #43cea2;">
+        <div class="container">
+          <a class="navbar-brand text-white font-weight-bold" href="#" style="font-size: 1.5rem;">Verde Newark</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="sus.html">Sustainability Tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="efb.html">Eco-Friendly Businesses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="res.html">Resource Library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="take-part.html">Take Part</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1>Take Part</h1>
+      <p>Be a part of the change and help create a sustainable future!</p>
+    </div>
+
+    <!-- Why Get Involved Section -->
+    <div class="container my-5">
+      <div class="text-center mb-4">
+        <h2>Why Get Involved?</h2>
+        <p>By joining our efforts, you contribute to spreading awareness, creating impactful projects, and inspiring others to take action.</p>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="form-section mx-auto" style="max-width: 600px;">
+        <h4 class="text-center">Contact Us</h4>
+        <p class="text-center">Have questions or ideas? Want to volunteer? Fill out the form below, and we’ll get back to you!</p>
+        <form method="POST" action="/submit-contact">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit btn-block">Send Message</button>
+          </form>
+      </div>
+
+      <!-- Social Media Links Section -->
+      <div class="text-center mt-5">
+        <h5>Follow Us</h5>
+        <div class="social-links">
+          <a href="#" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+<!-- DEVELOPER: Isaiah Odunsi, IS117-005, Spring 2024 ->
