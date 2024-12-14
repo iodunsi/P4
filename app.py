@@ -40,7 +40,7 @@ def take_part():
             return redirect("/take-part")
 
         # Save to the database
-      conn = psycopg2.connect(DATABASE_URL, sslmode="require")
+        conn = psycopg2.connect(DATABASE_URL, sslmode="require")
         cursor = conn.cursor()
         cursor.execute(
             "INSERT INTO contacts (name, email, message) VALUES (%s, %s, %s)", 
