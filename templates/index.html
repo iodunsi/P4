@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="icon" href="path/to/favicon.ico">
+    <link rel="icon" href="{{ url_for('static', filename='media/favicon.ico') }}" type="image/x-icon">
     <style>
       body {
         background: linear-gradient(to right, #6dd5fa, #2980b9);
@@ -33,35 +33,36 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #43cea2;">
       <div class="container">
-        <a class="navbar-brand text-white font-weight-bold" href="#" style="font-size: 1.5rem;">Verde Newark</a>
+        <a class="navbar-brand text-white font-weight-bold" href="{{ url_for('home') }}">Verde Newark</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link text-white" href="index.html">Home</a>
+              <a class="nav-link text-white" href="{{ url_for('home') }}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="sus.html">Sustainability Tips</a>
+              <a class="nav-link text-white" href="{{ url_for('sustainability_tips') }}">Sustainability Tips</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="efb.html">Eco-Friendly Businesses</a>
+              <a class="nav-link text-white" href="{{ url_for('eco_friendly_businesses') }}">Eco-Friendly Businesses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="res.html">Resource Library</a>
+              <a class="nav-link text-white" href="{{ url_for('resource_library') }}">Resource Library</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="templates/take-part.html">Take Part</a>
+              <a class="nav-link text-white" href="{{ url_for('take_part') }}">Take Part</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
 
     <!-- Hero Section -->
     <div class="container text-center mt-5">
-      <img src="media/verdelogo.png" alt="Verde Newark Logo" class="mb-3">
+      <img src="{{ url_for('static', filename='media/verdelogo.png') }}" alt="Verde Newark Logo">
       <p>Join the Newark Verde Community</p>
       <button class="get-involved-btn">Get Involved</button>
     </div>
