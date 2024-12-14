@@ -103,7 +103,7 @@
       <div class="form-section mx-auto" style="max-width: 600px;">
         <h4 class="text-center">Contact Us</h4>
         <p class="text-center">Have questions or ideas? Want to volunteer? Fill out the form below, and we’ll get back to you!</p>
-        <form method="POST" action="/submit-contact">
+        <form method="POST" action="{{ url_for('take_part') }}">
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
