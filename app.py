@@ -1,32 +1,19 @@
 from flask import Flask, render_template, request, redirect, flash
-import sqlite3
+import psycopg2
+import os
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
-DATABASE = "contact.db"
+# PostgreSQL Connection URL from Render
+DATABASE_URL = os.environ.get("DATABASE_URL")
 
 # Home Route
 @app.route("/", methods=["GET"])
 def home():
     return render_template("index.html")
 
-# Sustainability Tips
-@app.route("/sus", methods=["GET"])
-def sustainability_tips():
-    return render_template("sus.html")
-
-# Eco-Friendly Businesses
-@app.route("/efb", methods=["GET"])
-def eco_friendly_businesses():
-    return render_template("efb.html")
-
-# Resource Library
-@app.route("/res", methods=["GET"])
-def resource_library():
-    return render_template("res.html")
-
-# Contact Form
+# Contact Form Submission
 @app.route("/take-part", methods=["GET", "POST"])
 def take_part():
     if request.method == "POST":
@@ -39,10 +26,14 @@ def take_part():
             return redirect("/take-part")
 
         # Save to the database
-        conn = sqlite3.connect(DATABASE)
+        conn = psycopg2.connect(DATABASE_URL, sslmode="require")
         cursor = conn.cursor()
-        cursor.execute("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)", (name, email, message))
+        cursor.execute(
+            "INSERT INTO contacts (name, email, message) VALUES (%s, %s, %s)", 
+            (name, email, message)
+        )
         conn.commit()
+        cursor.close()
         conn.close()
 
         success_message = f"Thank you for contacting us! We'll get back to you soon, {name}!"
